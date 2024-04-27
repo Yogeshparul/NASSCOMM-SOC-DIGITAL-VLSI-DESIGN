@@ -1,5 +1,5 @@
-NASSCOMM SOC DIGITAL VLSI DESIGN
+**NASSCOMM SOC DIGITAL VLSI DESIGN
 
-Day 1:Introduction to IC package, chip, pads, core and IPs
+Day 1:Introduction to IC package, chip, pads, core and IPs**
 
 
