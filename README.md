@@ -1,6 +1,6 @@
 **NASSCOMM SOC DIGITAL VLSI DESIGN**
 
-**Day 1:Introduction to IC package, chip, pads, core and IPs**
+**Day 1:Introduction to IC package**
 
 ### Integrated Circuits (ICs) are the backbone of contemporary electronic devices, ranging from smartphones to sophisticated computing systems. Grasping the architecture and functionality of ICs is essential for understanding the operation of electronic devices at their core. ICs are composed of several critical elements, including packaging, semiconductor chips, connection pads, the central processing core, and Intellectual Properties (IPs), among others. ###
 
