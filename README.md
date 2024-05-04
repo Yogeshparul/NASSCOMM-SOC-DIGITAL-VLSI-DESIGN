@@ -159,6 +159,94 @@ In the OpenLane design process, the finalization phase encompasses Static Timing
 
 Get familiar to OpenSource EDA tool
 
+Get familiar with open-source EDA Tools
+We are actually interested in working in openlane_working_dir directory.
+
+image
+
+
+But let's explore what is inside the vsdflow directory--
+
+Screenshot 2024-05-01 170426
+
+Screenshot 2024-05-01 170645
+
+Actually in the openlane_working_dir, there will be two directories-- openlane and pdks.
+Screenshot 2024-05-01 175007
+
+pdk stands for "process design kit".
+In the above openlane directory, we will be actually doing everything.
+Coming to the pdks directory, This folder has all the information related to the pdk. The pdk which we will be using for this workshop is SkyWater 130nm pdk. This was recently made open source. So openlane is built around this pdk.
+In the pdks directory, there is a skywater-pdk folder which has all the pdk related files (timing libraries, lef files). So all these silicon foundry files are compatible to work with commercial EDA tools and not with open-source EDA tools.
+Screenshot 2024-05-01 180333
+
+So open_pdks basically plans to solve that problem. They are basically sets of scripts and files that convert these foundry-level pdks to be compatible with open-source EDA tools like Magic, netgen, etc.
+Sky130A is that pdk that has been made compatible to work with an open-source environment.
+Inside the Sky130A directory we will see two directories-- libs.ref and libs.tech.
+Screenshot 2024-05-01 181429
+
+libs.ref contains all the technology-specific files and libs.tech contains tools-specific files.
+Screenshot 2024-05-01 180658
+
+Inside the libs.ref directory, we will be working with sky130_fd_sc_hd which contains all the technology files.
+
+Now, we will actually start our labs from the openlane directory.
+vsduser@vsdsquadron:~/Desktop/work/tools/openlane_working-dir/openlane/$
+To invoke the openLane we have to use the two commands that are docker and flow.tcl -interactive. (interactive means all the process is done step by step.)
+
+Now the openLane has been invoked.
+
+The next command should be package require openlane 0.9..( this command basically imports all the packages which is required for the flow).
+
+
+So these 3 steps have to be done every time.
+
+All the designs that are run by the openlane are extracted from the designs folder present inside the openlane directory.
+
+These are all the designs already built-in in the openlane. but we will be doing it for picorv32a.
+
+Screenshot 2024-05-01 183746
+
+The picorv32a directory will have src folder and config.tcl file.
+The "src" folder will contain .v and .sdc files inside it.
+Screenshot 2024-05-01 185018
+
+config.tcl bypasses any configurations that have been already done into openlane.
+command to open config.tcl file--
+$ less config.tcl
+In the config.tcl file, we actually set the design_name, Verilog files, sdc files, clock period, clock port, and filename variable and then we source this file. if suppose clock period is set to any other value in the flow as default, then we can override that value using config.tcl file.
+So, the precedence in which the openlane takes the value is first the "default value already set in the openlane", and second is the "value set in the config.tcl file" and the third is the "sky130A_sky130_fd_sc_hd_config.tcl" which means the last one has the highest priority.
+Now coming back to openlane--
+
+The next command is prep -design picorv32a and after that, it will show Preparation complete.
+Here we actually prepare the design setup stage. we need to set up the file system specific to the flow. i.e. each & every step of the flow will be fetching files from a particular location. So that location needs to be created.
+mergeLef.py means it has merged both the .lef and .tlef files into one mergeLef.py file.
+After the Preparation complete state, we will first check if any directory is created in the picorv32 directory or not!!.. We will see that a runs directory is created in the picorv32 directory and inside the "runs" directory a folder with today's date will be created inside this directory.
+Screenshot 2024-05-01 194254
+
+Inside this directory, the folder structure required by the openlane will be present.
+
+As per now except for the "tmp" folder, rest all the folders will be empty.
+
+tmp folder is where temporary files are stored.
+
+results folder is present for each of the stage. So as per now, nothing has been run, so there will be nothing inside this folder.
+
+reports folder will contain the report inside each of the stages in the flow.
+
+The config.tcl file present here shows which all parameter is being taken by the run. i.e. "pdk", "lef information", "tracks information", "tlef information", "library information". So if we make any changes in the original configuration file, after running the floorplan, that will be updated here in this config.tcl file.
+
+The cmds.log file takes the record of all the commands that we have used.
+
+After checking "runs" directory, now we will give command as run_synthesis.
+
+Screenshot 2024-03-15 081613
+
+After the synthesis is over, we will check how the result has been displayed in the "runs" directory.
+This is the synthesis result. we calculated the flop ratio.
+
+Screenshot 2024-03-15 095813
+
 
 
 
