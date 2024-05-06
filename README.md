@@ -177,8 +177,11 @@ help : using this command we can know the working of any command.
 
 clear : This command clears the terminal.
 
-**Design Preparation Setup
-**
+**Design Preparation Setup**
+
+OpenLane directory, one should use the docker command. This command grants access to BASH. Upon entering BASH, it is necessary to execute the flow.tcl script, as this file contains the required steps for OpenLane operation. Additionally, the -interactive switch must be used alongside the tcl file to facilitate a step-by-step process. Without the -interactive switch, the entire flow, from RTL to GDS, will execute at once, culminating in a final report. The appropriate command for this procedure is ./flow.tcl -interactive. Once OpenLane is activated, a change in the prompt will be noticeable, indicating the need to input the packages essential for running the flow. To do this, the command package require openlane 0.9 is used.
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/e5d9bed2-8da7-430d-8d65-e05d7c340e62)
 
 
 
