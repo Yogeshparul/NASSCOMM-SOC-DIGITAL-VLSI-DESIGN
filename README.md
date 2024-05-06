@@ -339,7 +339,49 @@ To open the Magic tool, use the command magic -d XR.
 
 First, choose a region within the GUI. Then, move the cursor to the metal 3 layer and hit the ‘P’ key. This action will populate the chosen area with metal 3. Next, open the tkcon terminal and enter the command cif see VIA2. Executing this command will apply the VIA2 mask to the area where metal 3 was previously filled
 
-fix Poly-9 error in Sky130 tech file
+**Laboratory Exercise to fix Poly-9 error in Sky130 tech file**
+Load the poly.9 file into the magic tool by executing the load poly.mag command in the tkcon terminal.
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/c41bc81b-fe16-4169-a68e-12fe8aa83af2)
+
+Verify the spacing between the poly resistor and the poly on the layout, and cross-reference it with the standard value listed on the Skywater website. The image provided clearly illustrates the discrepancy in the spacing. Let’s proceed to correct this issue
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/62481247-0be9-4dd8-8878-5d77314dcc9c)
+
+Navigate to the drc_tests directory, locate and open the Sky130a.tech file. Search for the term poly.9 within the file. Apply the modifications as depicted in the following images and ensure to save the changes.
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/68b78f2b-3c60-4443-803d-8254c0404c53)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/f170a9d1-a3df-45c8-855e-679e3effd069)
+
+Now again load the tech file
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/ad4d8834-112e-412e-8ffc-162923b1d7b7)
+
+**##Lab challenge to c=describe the DRC error as geometrical construct##**
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/ab704689-097f-4e67-b50b-6cbae873c860)
+
+we have some violations, Open tech file and make changes as shown
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/f7e408d8-cb71-4ffa-90d3-48f607423d53)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/37882fd2-610b-4dd3-93a0-665a95e9de22)
+
+**Lab challenge for Incorrect rules and fix them After updating the tech file load it again and check for errors**
+updating the tech file load it again and check for errors
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/ab1d6d45-e1a2-4da7-8a4c-1045156c15a9)
+
+Now after tapping the nwell violations are resolved.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
