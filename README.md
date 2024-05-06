@@ -197,6 +197,22 @@ there will be a directory named ‘tmp’ which contains various types of files.
 We need to perform synthesis on the design. To do this, we must use the command run_synthesis. The tool will take some time to perform the synthesis; upon completion, it will display the message ‘Synthesis was successful
 ![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/76e329f8-9c57-4b4c-8259-018289783302)
 
+**Synthesis results**
+
+Now we need to find out the flipflop percentage in total cells. For this we use reports from Synthesis stage
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/471e0bc7-6aeb-41e9-91af-927e1eb5c485)
+
+We can observe that the total number of cells used in the design is 14,876 and the number of D-flip-flops is 1,613. Therefore, the percentage of flip-flops, also known as the Flop Ratio, is calculated as follows:
+Flop Ratio=(Total number of cellsnumber of flip-flops​)×100=(148761613​)×100=10.84%
+Before performing synthesis, the reports directory was empty. After synthesis, the reports generated during the process are stored in the reports directory
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/14a59109-33a5-403e-8abe-2b0c6d25a389)
+
+**Day 2**
+
+
+
 
 
 
