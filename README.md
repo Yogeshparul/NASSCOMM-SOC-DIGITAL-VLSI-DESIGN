@@ -158,9 +158,26 @@ In the OpenLane design process, the finalization phase encompasses Static Timing
 
 **
 Get familiar to OpenSource EDA tool**
+
+In order to access the OpenLane tool, we will be needing some basic linux commands.They are listed below
+
+pwd : It displays the present working directory and its path.
+cd : Using this command we can move in both ways in the directory tree.
+ls : It lists all the sub-directories and files present in the current directory.
+mkdir : Using this command, we can create a new directory.
+rmdir : Using his command, we can delete an existing directory.
+rm : This command is used to delete the files.
+help : using this command we can know the working of any command.
+clear : This command clears the terminal.
+
+
 To open the openLANE give the code as "docker ./flow.tcl -interactive
+
 Now let us see the options and other things present inside the pdks below photo shows the path for pdks
+
 ![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/4b967555-399b-4ff8-a0df-659bdd5662c0)
+
+
 
 
 
