@@ -255,6 +255,22 @@ Images for pin saperation.
 
 ![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/199bc06e-c81f-4fa6-8b4c-44ee088e0bcf)
 
+**##Library Binding and Placement##**
+start the placement we need to use the command run_placement.
+
+After Placement is done to check whether the cells are placed correctly or not, we need to check GUI and that will be done using MAGIC tool with the following command
+
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+
+Layout in MAgic and the Standard cells in the layout are shown in the below figure
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/c1e9a7e8-6a70-44fd-8016-d30e65c04d3d)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/6c26e213-21a7-4c38-ba25-673e1c5a97f7)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/0c3bcd4b-d281-413a-aaf4-82d7d3e6c722)
+
+
+
 
 
 
