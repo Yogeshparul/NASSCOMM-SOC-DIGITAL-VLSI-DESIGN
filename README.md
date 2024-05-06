@@ -157,7 +157,7 @@ Further optimization transforms the gate-level netlist within OpenRoad. This tra
 In the OpenLane design process, the finalization phase encompasses Static Timing Analysis (STA), Design Rule Checking (DRC), Layout Versus Schematic (LVS), and the extraction of Resistance-Capacitance (RC) data from the analysis of the routed layout. This phase culminates in the production of a suite of reports that facilitate the Static Timing Analysis. The RC extraction is performed by converting DEF to SPEF, and the STA is conducted using OpenSTA within the OpenROAD framework.
 
 **
-Get familiar to OpenSource EDA tool**
+**Get familiar to OpenSource EDA tool****
 
 In order to access the OpenLane tool, we will be needing some basic linux commands.They are listed below
 
@@ -177,13 +177,8 @@ help : using this command we can know the working of any command.
 
 clear : This command clears the terminal.
 
-
-To open the openLANE give the code as "docker ./flow.tcl -interactive
-
-Now let us see the options and other things present inside the pdks below photo shows the path for pdks
-
-![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/4b967555-399b-4ff8-a0df-659bdd5662c0)
-
+**Design Preparation Setup
+**
 
 
 
