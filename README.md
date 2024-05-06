@@ -183,6 +183,23 @@ OpenLane directory, one should use the docker command. This command grants acces
 
 ![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/e5d9bed2-8da7-430d-8d65-e05d7c340e62)
 
+we need to setup the design and for that the command will be prep -design picorv32a.
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/1a5830ae-2f24-4642-900a-7d9264a99adc)
+
+After Preparation is done a directory with current date will be created in the runs folder.And in that directory all the directorys that are needed to store the results , reports etc.. will be created.
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/937f220e-217c-4415-b3ef-30152dfaf67b)
+
+there will be a directory named ‘tmp’ which contains various types of files. One of these files is the ‘merged.lef’ file; it includes information on both the metal layer level and the cell level
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/4212bbbb-9f8e-4d12-a15b-690a256e3915)
+
+We need to perform synthesis on the design. To do this, we must use the command run_synthesis. The tool will take some time to perform the synthesis; upon completion, it will display the message ‘Synthesis was successful
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/76e329f8-9c57-4b4c-8259-018289783302)
+
+
+
+
 
 
 
