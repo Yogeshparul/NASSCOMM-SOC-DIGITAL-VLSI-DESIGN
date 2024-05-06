@@ -209,7 +209,7 @@ Before performing synthesis, the reports directory was empty. After synthesis, t
 
 ![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/14a59109-33a5-403e-8abe-2b0c6d25a389)
 
-**Day 2**
+**##DAY 2 - Good floorplan vs bad flooeplan and introduction to library cells##**
 
 
 
