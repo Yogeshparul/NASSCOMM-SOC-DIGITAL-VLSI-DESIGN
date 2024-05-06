@@ -295,6 +295,55 @@ ext2spice , this will create a spice file in the vsdstdcelldesign directory.
 
 ![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/d78b1ace-10d3-4c60-ae40-0d995b915a83)
 
+**##Sky130 Tech File Labs##**
+Lab Steps to characterize the Inverter using sky130 model files
+From the plot that we got from ngspice, we need to characterize four parameters of the Inverter.
+
+Rise time : It is the time taken for the output waveform to go to 80% of its max value from 20% of its max value.
+
+Rise time = 0.0422 ns
+
+Fall time : It is the time taken for the output to fall from 80% of its max value to 20% of its max value.
+
+Fall Time = 0.0278 ns
+
+Propogation Delay : It is the time taken for the 50% of transition from 0 to 1 at the output for the 50% transistion from 1 to 0 at the input side.
+
+Prop Delay = 0.034 ns
+
+Cell Fall Delay : It is the time taken for the 50% of transition from 1 to 0 at the output for the 50% transistion from 0 to 1 at the input side.
+
+cell fall delay = 0.0043 ns
+
+We have succesfully characterized the Inverter, now we should create a LEF file.
+
+**##Lab Introduction to Sky130 pdk's and steps to download labs##**
+
+To download the lab files, being in the home directory use the command wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+
+Now you have downloaded the zip file. To extract the labs from the zip file use the command tar xfz drc_tests.tgz
+
+In the downloaded files , .magicrc file serves as the start-up script for MAGIC.
+
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/8481e3c6-82e7-46f5-bb7b-6e1ef008628f)
+
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/d0951a5f-f471-402b-b89e-ec9baeeaecc0)
+
+**##Lab Introduction to Magic and steps to load Sky130 tech-rules##**
+
+To open the Magic tool, use the command magic -d XR.
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/ddf07539-d644-4702-925f-f9d30efd611c)
+
+First, choose a region within the GUI. Then, move the cursor to the metal 3 layer and hit the ‘P’ key. This action will populate the chosen area with metal 3. Next, open the tkcon terminal and enter the command cif see VIA2. Executing this command will apply the VIA2 mask to the area where metal 3 was previously filled
+
+fix Poly-9 error in Sky130 tech file
+
+
+
+
 
 
 
