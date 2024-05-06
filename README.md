@@ -357,7 +357,7 @@ Now again load the tech file
 
 ![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/ad4d8834-112e-412e-8ffc-162923b1d7b7)
 
-**##Lab challenge to c=describe the DRC error as geometrical construct##**
+**##Lab challengeDRC error as geometrical construct##**
 
 ![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/ab704689-097f-4e67-b50b-6cbae873c860)
 
@@ -371,6 +371,45 @@ updating the tech file load it again and check for errors
 ![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/ab1d6d45-e1a2-4da7-8a4c-1045156c15a9)
 
 Now after tapping the nwell violations are resolved.
+
+
+**##Pre layout analysis and importance of good clock tree##**
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/421aae59-fe29-4d81-a709-93d6c71a5352)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/29ba8b16-690a-4170-b144-a141e36fff22)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/cbd1f2df-9013-4e97-89fc-db0fe2b57aa8)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/26aa5a35-cd4c-4bec-af93-a8915d03ad03)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/7258fdcd-6955-42b9-afdf-66441f4cbb41)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/8fbca3e9-141c-4608-b5d3-3aaa60d6da93)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/4b90897b-f391-4dca-85c7-231faff351e0)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/82099fc1-7d2f-4430-b375-3bc34a499d17)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/c91ecc92-0bdf-44af-b5d6-edeeccee9426)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/e9659be8-cb86-4f73-aed0-db7fcc1f7a1d)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/27250603-cd21-49cb-9559-ef6d37d58a24)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/74508da4-b8fe-4470-ae75-5d5ba2cb48d6)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
