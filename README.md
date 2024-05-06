@@ -211,6 +211,26 @@ Before performing synthesis, the reports directory was empty. After synthesis, t
 
 **##DAY 2 - Good floorplan vs bad flooeplan and introduction to library cells##**
 
+**Steps to Run a Floorplan Using OpenLANE**
+
+To ensure a smooth floorplan run in OpenLANE, designers must be mindful of certain switches that affect changes in the floorplan. For instance, the utilization factor and aspect ratio are among these switches. It is crucial for the designer to verify that these switches are correctly configured and aligned with the project’s requirements before initiating the floorplan. The image below illustrates the various types of switches available at the floorplan stage
+
+**see the configurations in the OpenLANE**
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/5667cd1a-3d0c-4b16-8100-4af029130c89)
+
+**The floorplanning.tcl and readme files look like this**
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/40175765-8673-4e2c-9dea-1014c76e2fca)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/84627902-9bf9-4ab9-a91f-a06983ee7cd2)
+
+In OpenLane, the lowest priority is assigned to the system default (Floorplanning.tcl), the second highest priority to config.tcl, and the highest priority to PDK_variant.tcl when determining the values for switches
+
+**##Review Floorplan files and steps to view floorplan##**
+
+
+
+
 
 
 
