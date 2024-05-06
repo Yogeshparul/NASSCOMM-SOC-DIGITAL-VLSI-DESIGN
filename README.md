@@ -269,6 +269,36 @@ Layout in MAgic and the Standard cells in the layout are shown in the below figu
 
 ![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/0c3bcd4b-d281-413a-aaf4-82d7d3e6c722)
 
+Inputs for cell design flow
+Each standard cells such as AND GATE, OR GATE, INV have their own cell design flow. The cell design flow consists of 3 parts namely
+
+Inputs
+Design Steps
+Outputs. Inputs includes
+DRC and LVS rules
+PDKS
+SPICE models
+
+**Inception of Layout and CMOS fabrication process**
+Lab steps to create std cell layout and extract spice netlist
+We need to extract the spice netlist from the given Inverter from MAGIC Tool inorder to spice simulation in ngspice tool.
+
+First we need to create an extraction file of the inverter. we can do this by using the command extract all in the tkcon window. This will create an extracted file in the vsdstdcelldesign directory.
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/28d96e07-86d5-47df-9ee3-59de95ef8ce9)
+
+create a spice file using this extracted file to use within the ngspice tool.For this the command will be ext2spice cthresh 0 rthresh 0, this will not create any new file.
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/7f9a0572-866f-4acc-8aa9-47c6cfdd93a7)
+
+ext2spice , this will create a spice file in the vsdstdcelldesign directory.
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/6735c7c1-b2d0-485a-8761-6684f06a58f2)
+
+![image](https://github.com/Yogeshparul/NASSCOMM-SOC-DIGITAL-VLSI-DESIGN/assets/168162609/d78b1ace-10d3-4c60-ae40-0d995b915a83)
+
+
+
+
+
 
 
 
