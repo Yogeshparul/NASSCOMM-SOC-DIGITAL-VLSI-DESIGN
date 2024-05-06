@@ -79,7 +79,7 @@ Applications are integrated into a segment of system software, which translates 
 
 
 SoC Design using OpenLane
-
+ 
 Exploring Open Source Solutions in Digital ASIC Design
 Understanding RTL Design: In the realm of digital circuit design, Register-Transfer Level (RTL) represents a conceptual layer that encapsulates the movement of digital signals between hardware registers and the logical manipulations applied to these signals. This abstraction is pivotal in modeling synchronous digital circuits. A variety of open-source resources are accessible to support such designs.
 Decoding EDA Tools: Electronic Design Automation (EDA) encompasses a suite of tools employed in the crafting and validation of integrated circuits (ICs), printed circuit boards (PCBs), and comprehensive electronic systems. The open-source community offers a plethora of tools in this domain, including notable ones like Qflow, OpenROAD, and OpenLANE.
